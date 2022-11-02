@@ -6,6 +6,15 @@
 }
 .btn-info{
     color: #d0eaf5;
-    background-color: #6286ea;
+    background-color: #3cb03c;
     border-color: #ced4da;
+
 }
+.a{
+    background-color: #2b8ade;
+    color: #eeeeee;
+}
+.btn-warning{
+    background-color: red;
+}
+

@@ -5,9 +5,10 @@ app.controller("myCtrl", function($scope){
 
 
     $scope.users = [
-        {address: "cong", email: "ctrinhtu@gmail.com", phonenumber:"0364132966",fullname: "trinh tu cong"},
-        {address: "thuy anh", email: "ngthuyanh@gmail.com", phonenumber:"0653335665",fullname:"nguyen thuy anh"},
-        {address: "dieu huyen", email: "huyendieu@gmail.com",phonenumber:"0656562323",fullname: "nguyen dieu huyen"},
+        {ProductName: "Product One", ProductPrice: "$22.50"},
+        {ProductName: "Product Two", ProductPrice: "$15.00"},
+        {ProductName: "Product Four", ProductPrice: "$123.82"},
+        {ProductName: "Product Five", ProductPrice: "$123.72"}
     ];
     $scope.addUser = function(){
         $scope.users.push($scope.newUser);
@@ -25,7 +26,7 @@ app.controller("myCtrl", function($scope){
 
     $scope.deleteUser = function(){
         $scope.users.splice($scope.users.indexOf($scope.clickedUser),1);
-        $scope.message = "more success";
+        $scope.message = "User Deleted successfully";
     };
     $scope.clearMessage = function(){
         $scope.message = "";
